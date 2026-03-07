@@ -9,7 +9,7 @@
 
 - [Architecture Overview](#architecture-overview)
 - [Lab Environment](#lab-environment)
-- [Phase 1 — Network Configuration](#phase-1--network-configuration)
+- [Phase 1 — Network Configuration](#1️⃣phase-1--network-configuration)
 - [Phase 2 — Python Environment Setup](#phase-2--python-environment-setup)
 - [Phase 3 — TheHive Organisation & API Setup](#phase-3--thehive-organisation--api-setup)
 - [Phase 4 — Flask Webhook Server](#phase-4--flask-webhook-server)
