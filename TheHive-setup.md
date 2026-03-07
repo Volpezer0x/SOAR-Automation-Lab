@@ -392,7 +392,7 @@ Caused by: org.apache.http.ConnectionClosedException: Connection is closed
 ### 🔎 Root Cause:  
 TheHive 5 uses JanusGraph which requires **Elasticsearch 7.x**. We had
 installed Elasticsearch 8.19.11 which is incompatible — the JanusGraph
-Elasticsearch driver cannot connect to the 8.x API. This happened after preforming ``` sudo apt-upgrade ``` which accidentally upgraded elasticsearch from 7.x to 8.x
+Elasticsearch driver cannot connect to the 8.x API. This happened after preforming ``` sudo apt upgrade ``` which accidentally upgraded elasticsearch from 7.x to 8.x
 
 **Fix — Downgrade Elasticsearch to 7.17.20:**
 
