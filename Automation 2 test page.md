@@ -252,8 +252,8 @@ pip install flask requests
 nano app.py
 ```
 
-![Building Webhook in Venv 1](docs/screenshots/python%20automation-%20install%20python3%20building%20the%20webhook%20in%20venv%201.png)
-![Building Webhook in Venv 2](docs/screenshots/python%20automation-%20install%20python3%20building%20the%20webhook%20in%20venv%202.png)
+![Building Webhook in Venv 1](doc/screenshots/python%20automation-%20install%20python3%20building%20the%20webhook%20in%20venv%201%20%20.png)
+![Building Webhook in Venv 2](doc/screenshots/python%20automation-%20install%20python3%20building%20the%20webhook%20in%20venv%202%20%20.png)
 
 ---
 
@@ -266,10 +266,9 @@ Navigate to **Administration → Organisations → +** and create a new organisa
 - **Name:** `SOAR-LAB`
 - **Description:** `Python Automation`
 
-![TheHive Setup 1](docs/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%201.png)
-![TheHive Setup 2](docs/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%202.png)
-![TheHive Setup 3](docs/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%203.png)
-
+![TheHive Setup 1](doc/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%201%20%20.png)
+![TheHive Setup 2](doc/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%202%20%20.png)
+![TheHive Setup 3](doc/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%203%20%20.png)
 ### Step 3.2 — Create users
 
 Two users were created under the `SOAR-LAB` organisation:
@@ -279,19 +278,19 @@ Two users were created under the `SOAR-LAB` organisation:
 | `soar@random.com` | Normal | Human analyst account |
 | `flask@random.com` | Service | API integration account |
 
-![TheHive Setup 4](docs/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%204.png)
-![TheHive Setup 5](docs/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%205.png)
+![TheHive Setup 4](doc/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%204%20%20.png)
+![TheHive Setup 5](doc/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%205%20%20.png)
 
 ### Step 3.3 — Generate API key for flask service user
 
 Click the eyeball icon to reveal the `flask@random.com` user, then click **Create API Key**:
 
-![TheHive Setup 6 - Click Eyeball](docs/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%206%20click%20the%20eyeball.png)
-![TheHive Setup 7 - Create API Key](docs/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%207%20create%20api%20key.png)
+![TheHive Setup 6 - Click Eyeball](doc/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%206%20click%20the%20eyeball%20%20.png)
+![TheHive Setup 7 - Create API Key](/doc/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%207%20create%20api%20key%20%20.png)
 
 ### Step 3.4 — Paste API key into app.py
 
-![TheHive Setup 8 - Paste API Key](docs/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%208%20paste%20in%20api%20key.png)
+![TheHive Setup 8 - Paste API Key](doc/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%208%20paste%20in%20api%20key%20%20.png)
 
 ### Step 3.5 — Start the automation server
 
@@ -300,7 +299,7 @@ source venv/bin/activate
 python app.py
 ```
 
-![TheHive Setup 9 - Server Running](docs/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%209%20automation%20server%20is%20up%20and%20running.png)
+![TheHive Setup 9 - Server Running](doc/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%209%20automation%20server%20is%20up%20and%20running%20%20.png)
 
 ### Step 3.6 — POST test to confirm TheHive connectivity
 
