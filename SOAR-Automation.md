@@ -310,7 +310,7 @@ curl -X POST http://10.181.218.100:5000/webhook \
   -d '{"test": "hello from automation"}'
 ```
 
-![TheHive Setup 10 - POST Test Success](docs/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%2010%20POST%20test%20successful.png)
+![TheHive Setup 10 - POST Test Success](doc/screenshots/python%20automation-%20setting%20up%20theHive%20accounts%20and%20api%2010%20POST%20test%20successful%20%20.png)
 
 ### Step 3.7 — Wazuh/TheHive API sanity check
 
@@ -319,7 +319,7 @@ curl -X GET http://10.181.218.119:9000/api/v1/status \
   -H "Authorization: Bearer QOlu7vyORsW3o3bZUdW9jc9/FzVNE5oH"
 ```
 
-![TheHive Post Sanity Check](docs/screenshots/python%20automation%20thehive%20post%20sanity%20check.png)
+![TheHive Post Sanity Check](doc/screenshots/python%20automation%20thehive%20post%20sanity%20check.png)
 
 ---
 
@@ -343,13 +343,13 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
 ```
 
-![Flask Configuration Final Cleanup](docs/screenshots/python%20automation%20flask%20configuration%20final%20cleanup.png)
+![Flask Configuration Final Cleanup](doc/screenshots/python%20automation%20flask%20configuration%20final%20cleanup.png)
 
 ### Upgraded to `/wazuh-alert` route with TheHive integration
 
 The webhook route was renamed to `/wazuh-alert` and wired directly to TheHive's alert API:
 
-![TheHive API and Wazuh Alerts](docs/screenshots/python%20automation-%20setting%20up%20theHive%20api%20and%20Wazuh%20alerts.png)
+![TheHive API and Wazuh Alerts](doc/screenshots/python%20automation-%20setting%20up%20theHive%20api%20and%20Wazuh%20alerts%20.png)
 
 ---
 
@@ -377,12 +377,12 @@ An `<integration>` block was added pointing at the Flask server. The `<name>` fi
 </integration>
 ```
 
-![Wazuh Adding Custom Webhook](docs/screenshots/wazuh%20adding%20custom%20webhook.png)
-![Wazuh Not Sending 1](docs/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook.png)
-![Wazuh Not Sending 2](docs/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook%202.png)
-![Wazuh Not Sending 3 - Use Custom](docs/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook%203%20use%20custom%20not%20flask-webhook.png)
-![Wazuh Not Sending 4 - Custom Not Installed](docs/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook%204%20custom-webhook%20isn%20t%20installed%20in%20the%20first%20place%20%20%20we%20ll%20use%20shuffle.png)
-![Wazuh Not Sending 5 - Use Shuffle](docs/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook%205%20custom-webhook%20isn%20t%20installed%20in%20the%20first%20place%20%20%20we%20ll%20use%20shuffle.png)
+![Wazuh Adding Custom Webhook](doc/screenshots/wazuh%20adding%20custom%20webhook.png)
+![Wazuh Not Sending 1](doc/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook.png)
+![Wazuh Not Sending 2](doc/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook%202.png)
+![Wazuh Not Sending 3 - Use Custom](doc/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook%203%20use%20custom%20not%20flask-webhook.png)
+![Wazuh Not Sending 4 - Custom Not Installed](doc/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook%204%20custom-webhook%20isn't%20installed%20in%20the%20first%20place...we'll%20use%20shuffle.png)
+![Wazuh Not Sending 5 - Use Shuffle](doc/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook%205%20custom-webhook%20isn't%20installed%20in%20the%20first%20place...we'll%20use%20shuffle.png)
 
 ### Step 5.2 — Restart Wazuh manager
 
@@ -393,8 +393,8 @@ sudo tail -f /var/ossec/logs/ossec.log
 
 ### Step 5.3 — Alerts confirmed arriving at Flask
 
-![Wazuh Success - Alerts Posting on Flask](docs/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook%206%20success%20alerts%20are%20posting%20on%20flask.png)
-![Wazuh - Mimikatz Alert on Flask](docs/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook7%20mimikatz%20alert%20showing%20on%20flask.png)
+![Wazuh Success - Alerts Posting on Flask](doc/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook%206%20success%20alerts%20are%20posting%20on%20flask.png)
+![Wazuh - Mimikatz Alert on Flask](doc/screenshots/wazuh%20not%20sending%20anything%20to%20the%20webhook7%20mimikatz%20alert%20showing%20on%20flask.png)
 
 ---
 
@@ -404,8 +404,8 @@ sudo tail -f /var/ossec/logs/ossec.log
 
 Navigate to [virustotal.com](https://www.virustotal.com) → sign in → click your profile → **API Key**:
 
-![VirusTotal Get API Key 1](docs/screenshots/Virustotal%20get%20your%20api%20key1.png)
-![VirusTotal Get API Key 2](docs/screenshots/Virustotal%20get%20your%20api%20key2.png)
+![VirusTotal Get API Key 1](doc/screenshots/Virustotal%20get%20your%20api%20key1.png)
+![VirusTotal Get API Key 2](doc/screenshots/Virustotal%20get%20your%20api%20key2.png)
 
 ### Step 6.2 — Store VT API key in .bashrc
 
@@ -426,9 +426,9 @@ source ~/.bashrc
 echo $VT_API_KEY
 ```
 
-![VirusTotal API Key Setup 1](docs/screenshots/python%20automation-%20virustotal%20setup%20api%20key1.png)
-![VirusTotal API Key Setup 2](docs/screenshots/python%20automation-%20virustotal%20setup%20api%20key2.png)
-![VirusTotal API Key Setup 3](docs/screenshots/python%20automation-%20virustotal%20setup%20api%20key3.png)
+![VirusTotal API Key Setup 1](doc/screenshots/python%20automation-%20virustotal%20setup%20api%20key1.png)
+![VirusTotal API Key Setup 2](doc/screenshots/python%20automation-%20virustotal%20setup%20api%20key2.png)
+![VirusTotal API Key Setup 3](doc/screenshots/python%20automation-%20virustotal%20setup%20api%20key3.png)
 
 > **Note:** `sudo source ~/.bashrc` returns "command not found" — this is expected behaviour. Use `source ~/.bashrc` (without sudo) to reload environment variables in the current shell session.
 
@@ -454,11 +454,11 @@ def check_virustotal(sha256):
 
 ### Step 6.4 — SHA256 and VT results confirmed in terminal
 
-![VirusTotal SHA256 and VT Results on Terminal](docs/screenshots/python%20automation-%20virustotal%20sha256and%20vt%20results%20on%20terminal.png)
+![VirusTotal SHA256 and VT Results on Terminal](doc/screenshots/python%20automation-%20virustotal%20sha256and%20vt%20results%20on%20terminal.png)
 
 ### Step 6.5 — VirusTotal results appear in TheHive case
 
-![VirusTotal Successfully Shows on TheHive Case Alert](docs/screenshots/python%20automation-%20virustotal%20successfully%20showes%20up%20on%20thehive%20case%20alert.png)
+![VirusTotal Successfully Shows on TheHive Case Alert](doc/screenshots/python%20automation-%20virustotal%20successfully%20showes%20up%20on%20thehive%20case%20alert.png)
 
 ---
 
@@ -468,7 +468,7 @@ def check_virustotal(sha256):
 
 Early versions sent every alert to TheHive with a static title, making triage impossible.
 
-![TheHive Cases Before Dynamic Titles](docs/screenshots/TheHive%20cases%20before%20dynamic%20titles.png)
+![TheHive Cases Before Dynamic Titles](doc/screenshots/TheHive%20cases%20before%20dynamic%20titles.png)
 
 ### The fix: extract rule description, agent name, and severity
 
@@ -498,14 +498,14 @@ else:
 title = f"[{severity_label}] {rule_desc} on {agent_name}"
 ```
 
-![Flask Pro Titles and SHA256 Extraction](docs/screenshots/python%20automation%20flask%20pro%20titles%20and%20sha256%20extraction.png)
-![Flask Pro Titles and SHA256 Extraction 2](docs/screenshots/python%20automation%20flask%20pro%20titles%20and%20sha256%20extraction%202.png)
+![Flask Pro Titles and SHA256 Extraction](doc/screenshots/python%20automation%20flask%20pro%20titles%20and%20sha256%20extraction%20.png)
+![Flask Pro Titles and SHA256 Extraction 2](doc/screenshots/python%20automation%20flask%20pro%20titles%20and%20sha256%20extraction%202%20.png)
 
 ### Avoiding duplicate alerts in TheHive
 
 Duplicate alerts were created due to retries from Wazuh. The `sourceRef` field was set to a unique value per alert to prevent TheHive from accepting duplicates:
 
-![Avoiding TheHive Duplicates](docs/screenshots/python%20automation%20flask%20pro%20titles%20and%20sha256%20extraction%203%20avoiding%20thehive%20duplicates%20tightening%20and%20cleaning%20up%20more.png)
+![Avoiding TheHive Duplicates](doc/screenshots/python%20automation%20flask%20pro%20titles%20and%20sha256%20extraction%203%20avoiding%20thehive%20duplicates%20tightening%20and%20cleaning%20up%20more%20.png)
 
 ### Bug fix: `event_id is not defined`
 
@@ -515,11 +515,11 @@ A `NameError` was thrown because `event_id` was referenced in the `sourceRef` fi
 "sourceRef": alert["all_fields"]["rule"]["id"],
 ```
 
-![Event ID Not Defined Error](docs/screenshots/python%20automation%20flask%20pro%20titles%20and%20sha256%20extraction%204%20event%20id%20not%20defined.png)
+![Event ID Not Defined Error](doc/screenshots/python%20automation%20flask%20pro%20titles%20and%20sha256%20extraction%204%20event_id%20not%20defined%20.png)
 
 ### Result: professional, actionable alert titles
 
-![TheHive Cases After Dynamic Titles](docs/screenshots/TheHive%20cases%20after%20dynamic%20titles.png)
+![TheHive Cases After Dynamic Titles](doc/screenshots/TheHive%20cases%20after%20dynamic%20titles.png)
 
 ---
 
