@@ -46,7 +46,7 @@ This project demonstrates the core of **Security Orchestration, Automation, and 
 
 ## 🔗 Quick Links
 
-- [Setup Instructions](docs/setup.md)  
+- [Setup Instructions](main/vm-setup.md)  
 - [Flask Automation Engine](docs/flask_engine.md)  
 - [VirusTotal Integration](docs/virustotal.md)  
 - [Email Notifications](docs/email_notifications.md)  
