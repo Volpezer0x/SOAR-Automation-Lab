@@ -193,7 +193,7 @@ Suspicious binaries
 
 ## 5️⃣ Time to get naughty 😈
 
-## Mimikatz Detection Rule Setup in Wazuh
+### Mimikatz Detection Rule Setup in Wazuh
 
 ### Overview
 Now that our Windows 11 envoroment is configured, lets introduce our endpoint threat.
