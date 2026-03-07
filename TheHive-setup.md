@@ -143,7 +143,7 @@ sudo systemctl status cassandra.service
 
 Cassandra should show `active (running)`.
 
-> **Note:** If you ever see the fatal error:
+> #### **⚠️Note:** If you ever see the fatal error:
 > `Saved cluster name Test Cluster != configured name SOAR-LAB`
 > it means the data directory wasn't cleared before changing the cluster name.
 > Fix: edit `cassandra.yaml`, revert `cluster_name` back to `'Test Cluster'`,
@@ -362,7 +362,7 @@ ERR_CONNECTION_REFUSED
 
 ![No Connection](doc/screenshots/TheHive%20setup13%20no%20connection.png)
 
-**Root Cause:** Ubuntu's UFW firewall was blocking port 9000.
+### 🔎 Root Cause: Ubuntu's UFW firewall was blocking port 9000.
 
 **Fix:**
 
@@ -389,10 +389,10 @@ Caused by: org.apache.http.ConnectionClosedException: Connection is closed
 
 ![Implementation Error](doc/screenshots/TheHive%20setup15%20issue%20could%20not%20initiate%20implementation.png)
 
-**Root Cause:**  
+### 🔎 Root Cause:  
 TheHive 5 uses JanusGraph which requires **Elasticsearch 7.x**. We had
 installed Elasticsearch 8.19.11 which is incompatible — the JanusGraph
-Elasticsearch driver cannot connect to the 8.x API.
+Elasticsearch driver cannot connect to the 8.x API. This happened after preforming ``` sudo apt-upgrade ``` which accidentally upgraded elasticsearch from 7.x to 8.x
 
 **Fix — Downgrade Elasticsearch to 7.17.20:**
 
@@ -476,7 +476,7 @@ SettingsException: Failed to load settings from [elasticsearch.yml]
 
 ![Duplicate Error](doc/screenshots/TheHive%20setup9%20elasticsearch%20setup4%20start-enable-status%20duplicate%20cluster%20error-hash%20the%20duplicate%20to%20fix.png)
 
-**Root Cause:**  
+### 🔎Root Cause:  
 The `cluster.initial_master_nodes` key appeared twice in `elasticsearch.yml` —
 once uncommented and once still commented. Elasticsearch parsed both as active
 settings.
