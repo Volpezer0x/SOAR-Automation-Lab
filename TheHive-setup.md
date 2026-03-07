@@ -5,6 +5,7 @@
 TheHive is the case management platform in our SOAR pipeline. It sits on a
 dedicated Ubuntu Server 22.04 VM alongside its two dependencies: Apache
 Cassandra (graph database backend) and Elasticsearch (index/search backend).
+The official installation guide can be found here: https://docs.strangebee.com/thehive/installation/installation-guide-linux-standalone-server/
 
 ---
 
