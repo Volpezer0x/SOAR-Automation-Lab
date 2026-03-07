@@ -92,7 +92,7 @@ Event ID 7 — Image Loaded
 ![Sysmon Install 13](doc/screenshots/sysmon%20install%2013.png)
 
 ---
-### 🔎 Adding Sysmon transforms this lab from:
+### 🧬 Adding Sysmon transforms this lab from:
 
 “Basic SIEM lab”
 
@@ -409,7 +409,7 @@ Error: Could not upload rule (1113) - XML syntax error
 
 ![XML Syntax Error](doc/screenshots/windows11%20config%2031%20syntax%20error.png)
 
-**Root Cause:**  
+**🔎 Root Cause:**  
 The `<miter>` tag was used instead of the correct `<mitre>` tag — a simple 
 typo. Wazuh's XML validator caught it and rejected the rule. Checking the 
 journal logs on the Wazuh VM confirmed the manager was also failing to restart 
