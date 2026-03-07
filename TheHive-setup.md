@@ -271,7 +271,7 @@ Initially owned by root:
 
 ![Before Permissions](doc/screenshots/TheHive%20setup10%20folder%20previlages%20edit1.png)
 
-Fix ownership:
+✅Fix ownership:
 
 ```bash
 sudo chown -R thehive:thehive /opt/thp
@@ -364,7 +364,7 @@ ERR_CONNECTION_REFUSED
 
 ### 🔎 Root Cause: Ubuntu's UFW firewall was blocking port 9000.
 
-**Fix:**
+### ✅Fix:
 
 ```bash
 sudo ufw allow 9000
@@ -394,7 +394,7 @@ TheHive 5 uses JanusGraph which requires **Elasticsearch 7.x**. We had
 installed Elasticsearch 8.19.11 which is incompatible — the JanusGraph
 Elasticsearch driver cannot connect to the 8.x API. This happened after preforming ``` sudo apt upgrade ``` which accidentally upgraded elasticsearch from 7.x to 8.x
 
-**Fix — Downgrade Elasticsearch to 7.17.20:**
+### ✅Fix — Downgrade Elasticsearch to 7.17.20:
 
 #### Step 1 — Remove Elasticsearch 8.x completely
 
@@ -481,7 +481,7 @@ The `cluster.initial_master_nodes` key appeared twice in `elasticsearch.yml` —
 once uncommented and once still commented. Elasticsearch parsed both as active
 settings.
 
-**Fix:**  
+## ✅Fix:  
 Open the config and comment out the duplicate line, leaving only one active
 `cluster.initial_master_nodes` entry:
 
