@@ -70,7 +70,7 @@ Windows Endpoint (Sysmon)
 
 ---
 
-## Phase 1 — Network Configuration
+## 1️⃣ Phase 1 — Network Configuration
 
 The automation server started with a DHCP-assigned IP. For the webhook to be reliably reachable by the Wazuh manager, a **static IP** was required.
 
