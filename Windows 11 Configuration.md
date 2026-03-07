@@ -399,7 +399,7 @@ Add the following rule inside the existing `<group>` tags:
 
 ---
 
-### Issue — XML Syntax Error When Saving Rule
+### ❌ Issue — XML Syntax Error When Saving Rule
 
 **Symptom:**  
 Clicking Save returned:
@@ -409,7 +409,7 @@ Error: Could not upload rule (1113) - XML syntax error
 
 ![XML Syntax Error](doc/screenshots/windows11%20config%2031%20syntax%20error.png)
 
-**🔎 Root Cause:**  
+### 🔎 Root Cause:  
 The `<miter>` tag was used instead of the correct `<mitre>` tag — a simple 
 typo. Wazuh's XML validator caught it and rejected the rule. Checking the 
 journal logs on the Wazuh VM confirmed the manager was also failing to restart 
@@ -468,7 +468,7 @@ rule ID `100002` with description **Mimikatz Usage Detected** and level **15**.
 
 ---
 
-### Issue — Windows Defender Deleted Mimikatz
+### ❌ Issue — Windows Defender Deleted Mimikatz
 
 **Symptom:**  
 After re-enabling Defender and attempting to run Mimikatz again for testing, 
