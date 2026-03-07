@@ -1,4 +1,4 @@
-# 🕵️‍♂️ SOAR Automation Lab 
+# 🤖 SOAR Automation Lab 
 
 >> ### ( 🚧 This Lab is still Under Construction )
 
