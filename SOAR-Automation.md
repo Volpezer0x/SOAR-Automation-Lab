@@ -533,6 +533,8 @@ Navigate to: `myaccount.google.com → Security → 2-Step Verification`
 
 ![Email Notification 1 - 2FA Confirmation](doc/screenshots/email%20notification%201%202fa%20confirmation.png)
 
+>> ⚠️ Tip - Google seems to have hidden the app passwords section so you will need to navigate straight to it!
+>> 
 Then navigate to: `myaccount.google.com/apppasswords`
 
 Create a new app password named `SOAR-LAB`:
