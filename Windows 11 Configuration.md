@@ -423,7 +423,7 @@ wazuh-analysisd: Configuration error. Exiting
 
 ![Journal Log Error](doc/screenshots/windows11%20config%2031%20syntax%20error%203%20check%20journal%20log.png)
 
-**Fix:**  
+### ✅ Fix:  
 Edit the rule file directly on the Wazuh VM, correct the typo, validate with 
 `xmllint`, then restart the manager:
 
@@ -482,7 +482,7 @@ of a cmdlet, function, script file, or operable program.
 
 ![Mimikatz Deleted](doc/screenshots/windows11%20config%2032%20windows%20removed%20my%20minikatz.png)
 
-**Fix — Add a Defender Exclusion:**
+### ✅Fix — Add a Defender Exclusion:
 
 Navigate to **Windows Security > Virus & threat protection > Manage settings > 
 Add or remove exclusions**.
