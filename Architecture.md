@@ -34,12 +34,12 @@ The lab integrates the following components:
 ## 🖼️ Architecture Diagram
 
 ```text
-         +-----------------+              +---------------------------+
-         |                 |              |                           |
-         |     Wazuh       |  <---------- |   Windows 11              |
-         |                 |              |   sysmon / Wazuh agent    |
-         |                 |              |   Mimikatz                |
-         +--------+--------+              +---------------------------+
+         +-----------------+             +---------------------------+
+         |                 |             |                           |
+         |     Wazuh       | <---------- |   Windows 11              |
+         |                 |             |   sysmon / Wazuh agent    |
+         |                 |             |   Mimikatz                |
+         +--------+--------+             +---------------------------+
                   |
                   | Alert JSON
                   v
