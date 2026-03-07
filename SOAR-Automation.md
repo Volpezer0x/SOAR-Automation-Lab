@@ -531,14 +531,14 @@ Gmail requires **2-Step Verification** to be active before an App Password can b
 
 Navigate to: `myaccount.google.com → Security → 2-Step Verification`
 
-![Email Notification 1 - 2FA Confirmation](docs/screenshots/email%20notification%201%202fa%20confirmation.png)
+![Email Notification 1 - 2FA Confirmation](doc/screenshots/email%20notification%201%202fa%20confirmation.png)
 
 Then navigate to: `myaccount.google.com/apppasswords`
 
 Create a new app password named `SOAR-LAB`:
 
-![Email Notification 2 - App Passwords Hidden](docs/screenshots/email%20notification%202%20go%20to%20app%20passwords%20its%20hidden.png)
-![Email Notification 3 - App Password Generated](docs/screenshots/email%20notification%203%20you%20get%20your%20app%20password.png)
+![Email Notification 2 - App Passwords Hidden](doc/screenshots/email%20notification%202%20go%20to%20app%20passwords.its%20hidden.png)
+![Email Notification 3 - App Password Generated](doc/screenshots/email%20notification%203%20you%20get%20your%20app%20password.png)
 
 ### Step 8.2 — Add credentials to .bashrc
 
@@ -561,8 +561,8 @@ export EMAIL_TO="soar.lab.notifications@gmail.com"
 source ~/.bashrc
 ```
 
-![Edit Bashrc Add Email Credentials](docs/screenshots/email%20notification%204%20edit%20your%20bashrc%20and%20add%20your%20email%20credentials.png)
-![Edit Bashrc Keys and Emails](docs/screenshots/email%20notification%205%20edit%20bashrc%20and%20add%20your%20keys%20and%20emails.png)
+![Edit Bashrc Add Email Credentials](doc/screenshots/email%20notification%204%20edit%20your.bashrc%20and%20add%20your%20email%20credentials.png)
+![Edit Bashrc Keys and Emails](doc/screenshots/email%20notification%205%20edit%20bashrc%20and%20add%20your%20keys%20and%20emails.png)
 
 ### Step 8.3 — SMTP email function in app.py
 
@@ -598,15 +598,15 @@ def send_email_alert(subject, body):
         print(f"[!] Email failed: {e}")
 ```
 
-![Edit app.py SMTP 1](docs/screenshots/email%20notification%204%20edit%20app%20py%20to%20setup%20SMTP1.png)
-![Edit app.py SMTP 2](docs/screenshots/email%20notification%204%20edit%20app%20py%20to%20setup%20SMTP2.png)
-![Edit app.py SMTP 3](docs/screenshots/email%20notification%204%20edit%20app%20py%20to%20setup%20SMTP3.png)
+![Edit app.py SMTP 1](doc/screenshots/email%20notification%204%20edit%20app.py%20to%20setup%20SMTP1.png)
+![Edit app.py SMTP 2](doc/screenshots/email%20notification%204%20edit%20app.py%20to%20setup%20SMTP2.png)
+![Edit app.py SMTP 3](doc/screenshots/email%20notification%204%20edit%20app.py%20to%20setup%20SMTP3.png)
 
 ### Step 8.4 — Email test confirmed working
 
 Mimikatz was executed on the Windows endpoint. The pipeline triggered and the SOC alert email arrived in the inbox:
 
-![Email Test Works](docs/screenshots/email%20notification%206%20email%20test%20works.png)
+![Email Test Works](doc/screenshots/email%20notification%206%20email%20test%20works.png)
 
 ### Step 8.5 — Final email structure
 
@@ -619,13 +619,13 @@ The email body was refined to include all relevant fields:
 - MITRE ATT&CK technique IDs
 - Full raw Wazuh JSON
 
-![Email Structure Check](docs/screenshots/email%20notification%207%20checking%20email%20structure.png)
+![Email Structure Check](doc/screenshots/email%20notification%207%20checking%20email%20structure.png)
 
 ### Step 8.6 — VirusTotal results enriched in email body
 
-![Better VirusTotal Results in Email](docs/screenshots/email%20notification%208%20better%20virustotal%20results.png)
-![Better Email Subject](docs/screenshots/email%20notification%209%20better%20email%20subject.png)
-![Better VT Results in Email](docs/screenshots/email%20notification%2010%20better%20virustotal%20results%20in%20email.png)
+![Better VirusTotal Results in Email](doc/screenshots/email%20notification%208%20better%20virustotal%20results.png)
+![Better Email Subject](doc/screenshots/email%20notification%209%20better%20email%20subject.png)
+![Better VT Results in Email](doc/screenshots/email%20notification%2010%20better%20virustotal%20results%20in%20email.png)
 
 ### Final email format
 
@@ -645,6 +645,7 @@ VirusTotal scan stats: {'malicious': 63, 'suspicious': 0, ...}
 Full Wazuh Alert JSON:
 { ... }
 ```
+![Final Email](doc/screenshots/Finale%20Email.png)
 
 ---
 
@@ -658,7 +659,7 @@ Before pushing to GitHub, all secrets were moved out of the source code and into
 pip install python-dotenv
 ```
 
-![Final Cleanup 1 - dotenv](docs/screenshots/python%20automation-%20FINAL%20CLEANUP1%20dotenv.png)
+![Final Cleanup 1 - dotenv](doc/screenshots/python%20automation-%20FINAL%20CLEANUP1%20dotenv.png)
 
 ### Step 9.2 — Create .env file
 
@@ -675,7 +676,7 @@ EMAIL_PASS=your_16_char_app_password
 EMAIL_TO=your_email@gmail.com
 ```
 
-![Final Cleanup 2 - Create .env](docs/screenshots/python%20automation-%20FINAL%20CLEANUP2%20create%20and%20edit%20dotenv.png)
+![Final Cleanup 2 - Create .env](doc/screenshots/python%20automation-%20FINAL%20CLEANUP2%20create%20and%20edit%20dotenv.png)
 
 ### Step 9.3 — Create .gitignore
 
@@ -690,8 +691,8 @@ venv/
 *.pyc
 ```
 
-![Final Cleanup 3 - Create .gitignore](docs/screenshots/python%20automation-%20FINAL%20CLEANUP3%20create%20and%20edit%20%20gitignore%20for%20saftey.png)
-![Final Cleanup 4 - .gitignore Content](docs/screenshots/python%20automation-%20FINAL%20CLEANUP4%20create%20and%20edit%20%20gitignore%20for%20saftey.png)
+![Final Cleanup 3 - Create .gitignore](doc/screenshots/python%20automation-%20FINAL%20CLEANUP3%20create%20and%20edit%20.gitignore%20for%20saftey.png)
+![Final Cleanup 4 - .gitignore Content](doc/screenshots/python%20automation-%20FINAL%20CLEANUP4%20create%20and%20edit%20.gitignore%20for%20saftey.png)
 
 ### Step 9.4 — Initialise Git and verify .env is excluded
 
@@ -702,7 +703,7 @@ git status
 
 `git status` showed only `app.py`, `.gitignore`, and `app.py.bak` — the `.env` file was correctly excluded.
 
-![Final Cleanup 5 - Git Init Success, .env Not Showing](docs/screenshots/python%20automation-%20FINAL%20CLEANUP5%20git%20initiated%20and%20%20env%20is%20not%20showing%20SUCCESS.png)
+![Final Cleanup 5 - Git Init Success, .env Not Showing](doc/screenshots/python%20automation-%20FINAL%20CLEANUP5%20git%20initiated%20and%20.env%20is%20not%20showing%20SUCCESS.png)
 
 ---
 
@@ -959,7 +960,7 @@ Running Mimikatz on the Windows endpoint triggered the full automation chain:
 
 ### Final email output
 
-![Final Email Result Clean](docs/screenshots/python%20automation-%20FINAL%20CLEANUP6%20final%20email%20result%20CLEAN.png)
+![Final Email Result Clean](doc/screenshots/python%20automation-%20FINAL%20CLEANUP6%20final%20email%20result%20CLEAN.png)
 
 ### TheHive alert queue — before vs after
 
@@ -982,7 +983,3 @@ Running Mimikatz on the Windows endpoint triggered the full automation chain:
 | Secrets Management | `.env` file, `.gitignore`, `os.getenv()` — no hardcoded credentials |
 | Troubleshooting | Documented and resolved 11 distinct technical obstacles |
 | Git / Version Control | Repo initialisation, staged commits, `.env` exclusion verified |
-
----
-
-> *Lab built and documented by a SOC analyst in training — every error, fix, and iteration included.*
