@@ -1,6 +1,7 @@
 # 🤖 SOAR Automation Pipeline
 ### Flask · Wazuh · TheHive · VirusTotal · Gmail SMTP
-
+> So here it is, the beating heart of this lab.
+>  
 > A fully functional, Python-built Security Orchestration, Automation and Response (SOAR) pipeline — built from scratch on Ubuntu Server. Alerts flow from a Windows endpoint through Sysmon → Wazuh → Flask → VirusTotal → TheHive → SOC Email, end-to-end with no manual intervention.
 
 ---
