@@ -46,7 +46,7 @@ This project demonstrates the core of **Security Orchestration, Automation, and 
 * [🖥️ VM & Network Setup](vm-setup.md)
 * [📡 Wazuh Setup](Wazuh-setup.md)
 * [🐝 TheHive Setup](TheHive-setup.md)
-* [🪟 Windows 11 Configuration](Windows%2011%20Configuration.md)
+* [💻 Windows 11 Configuration](Windows%2011%20Configuration.md)
 * [🤖 SOAR Automation Walkthrough](SOAR-Automation.md)
 * [🏗️ Architecture Overview](Architecture.md)
 * [🐍 Flask Automation Engine](app.py)
