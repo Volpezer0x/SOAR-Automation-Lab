@@ -1,4 +1,4 @@
-# 🛡️ Wuzah Installation 
+# 📡 Wuzah Installation 
 
 I had followed the instructions on the official Wazuh website documentiation but have faced several issues. Below I highlight my process of troubleshooting and resolving these issues.
 
