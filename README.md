@@ -1,8 +1,5 @@
 # 🤖 SOAR Automation Lab 
 
->> ### ( 🚧 This Lab is still Under Construction )
-
-
 **Automated Security Operations & Response Lab**  
 
 Welcome to the **SOAR Automation Lab**, a fully functional security automation environment designed to process real-time alerts from Wazuh, enrich them with VirusTotal, create actionable cases in TheHive, and notify analysts via email **all automatically**.  
